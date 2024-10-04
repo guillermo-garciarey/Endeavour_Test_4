@@ -4576,4 +4576,32 @@ input, select, textarea {
     text-fill-color: transparent;
 }
 
+#header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Vertically center items */
+    padding: 10px; /* Optional padding */
+}
+
+.header-img {
+    margin-right: auto; /* Push the logo to the left */
+	justify-content: left;
+}
+
+.header-img {
+    display: block; /* Makes the image a block element */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any padding if applied */
+    max-width: 100%; /* Ensures it scales properly */
+    height: auto; /* Maintains aspect ratio */
+}
+
+
+@media (max-width: 975px) {
+
+    .header-img {
+        display: inline; /* Keep it as a block element */
+        margin: 0; /* Remove margins */
+    }
+
 
